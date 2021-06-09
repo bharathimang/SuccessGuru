@@ -31,5 +31,15 @@ public class Wrapper extends BasePage{
 		File dest=new File("target//Screenshots//"+generateRandomString(8)+".png");
 		FileHandler.copy(src, dest);
 	}
-
+	
+	public static Boolean compareTwoStrings(String str1, String str2){
+		boolean result=false;
+		if(str1.equals(str2)){
+			result=true;
+		}
+		else{
+			result=false;
+		}
+		return result;
+	}
 }
