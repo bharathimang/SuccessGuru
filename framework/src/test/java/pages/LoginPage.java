@@ -48,5 +48,10 @@ public class LoginPage extends BasePage {
 		Wrapper.createScreenCapture();
 		test.log(Status.PASS, "Login button has been clicked");
 	}
+	
+	public void getTitle() {
+		String title=lDriver.getTitle();
+		test.log(Status.PASS, title);
+	}
 
 }
